@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.chendw.myapplication.broadcast.NetWorkBroadcast;
 import com.example.chendw.myapplication.life.DialogActivity;
 import com.example.chendw.myapplication.uiwidget.MyViewActivity;
 
@@ -42,6 +43,7 @@ public class SideActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent(SideActivity.this, DialogActivity.class);
+//                        Intent intent = new Intent(SideActivity.this, NetWorkBroadcast.class);
                         startActivity(intent);
                     }
                 }

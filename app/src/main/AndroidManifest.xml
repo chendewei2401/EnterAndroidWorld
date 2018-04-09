@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.chendw.myapplication">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -24,6 +25,8 @@
         <activity android:name=".uiwidget.MyViewActivity" />
         <activity android:name=".uiwidget.ListViewActivity" />
         <activity android:name=".uiwidget.CustomListViewActivity"></activity>
+        <activity android:name=".broadcast.NetWorkBroadcast" />
+
     </application>
 
 </manifest>

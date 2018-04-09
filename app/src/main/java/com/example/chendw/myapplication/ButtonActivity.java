@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.chendw.myapplication.broadcast.NetWorkBroadcast;
+
 public class ButtonActivity extends AppCompatActivity {
 
     private static final String TAG = "ButtonActivity";
@@ -31,7 +33,8 @@ public class ButtonActivity extends AppCompatActivity {
                         Toast.makeText(ButtonActivity.this, "DID YOU JUST CLICK THE BUTTON", Toast.LENGTH_LONG).show();
                         Log.e(TAG, "onClick: you are finished");
 
-                        Intent intent = new Intent(ButtonActivity.this, SideActivity.class);
+//                        Intent intent = new Intent(ButtonActivity.this, SideActivity.class);
+                        Intent intent = new Intent(ButtonActivity.this, NetWorkBroadcast.class);
                         intent.putExtra("test", "gotcha");
                         startActivityForResult(intent, 1);
 
