@@ -34,9 +34,13 @@ public class ButtonActivity extends AppCompatActivity {
                         Log.e(TAG, "onClick: you are finished");
 
 //                        Intent intent = new Intent(ButtonActivity.this, SideActivity.class);
-                        Intent intent = new Intent(ButtonActivity.this, NetWorkBroadcast.class);
-                        intent.putExtra("test", "gotcha");
-                        startActivityForResult(intent, 1);
+
+//                        Intent intent = new Intent(ButtonActivity.this, NetWorkBroadcast.class);
+//                        intent.putExtra("test", "gotcha");
+//                        startActivityForResult(intent, 1);
+
+                        Intent intent = new Intent(ButtonActivity.this, RunTimePermissionActivity.class);
+                        startActivity(intent);
 
                         Log.e(TAG, "onClick: you finished me");
                     }
